@@ -17,6 +17,12 @@ Our full list of supported manifest formats can be found [here](https://kb.soos.
 
 ## Setup
 
+Need to install the next dependencies on jenkins server:
+
+*   python3
+*   python3-pip
+*   curl
+
 The python script needs some parameters to operate that you have to set before running the pipeline.
 
 | Parameters | Default | Description |
