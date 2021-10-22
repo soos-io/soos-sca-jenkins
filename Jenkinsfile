@@ -1,5 +1,10 @@
 pipeline{
-    agent any
+    agent {
+        docker { 
+            image 'python'
+            args '-e SOOS_CLIENT_ID=${SOOS_CLIENT_ID} -e SOOS_API_KEY=${SOOS_API_KEY}'
+        }
+    }
     environment {
 
         SOOS_PROJECT_NAME=" " // ENTER YOUR PROJECT NAME HERE
@@ -64,6 +69,10 @@ pipeline{
                     curl -LJO https://github.com/soos-io/soos-ci-analysis-python/releases/latest/download/requirements.txt -o requirements.txt
                     
                     echo "files downloaded" 
+                    
+                    python3 -m venv venv
+
+                    . venv/bin/activate 
                  
                     cd $WORKSPACE
 

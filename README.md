@@ -1,6 +1,6 @@
-# SOOS Integration with Jenkins
+# SOOS Analysis Integration for Jenkins
 
-The **Jenkinsfile** provided need to be used in your pipeline task, it will install all the dependencies and download and run the python script that analyse your manifiest file. It can be run using either synchronous or asynchronous mode.
+The **Jenkinsfile** provided need to be used in your pipeline task, it will install all the dependencies and download and run the python script that analyse your manifest file. It can be run using either synchronous or asynchronous mode.
 
 ## Supported Languages and Package Managers
 
@@ -17,11 +17,7 @@ Our full list of supported manifest formats can be found [here](https://kb.soos.
 
 ## Setup
 
-Need to install the next dependencies on jenkins server:
-
-*   python3
-*   python3-pip
-*   curl
+Need to install docker: [docker.io](https://www.docker.com/)
 
 The python script needs some parameters to operate that you have to set before running the pipeline.
 
