@@ -52,11 +52,11 @@ pipeline{
 
                     echo "creating soos folder"
 
-                    mkdir -p $WORKSPACE/soos/workspace/
+                    mkdir -p "$WORKSPACE/soos/workspace/"
                     
                     echo "try to downloading files if they don't exist:"
 
-                    cd $WORKSPACE/soos
+                    cd "$WORKSPACE/soos"
                     
                     # if files do not exist, will download them
 
@@ -74,7 +74,7 @@ pipeline{
 
                     . venv/bin/activate 
                  
-                    cd $WORKSPACE
+                    cd "$WORKSPACE"
 
                     pip3 install -r soos/requirements.txt
                     
