@@ -16,7 +16,7 @@ SOOS is the affordable, easy-to-integrate Software Composition Analysis solution
 
 ## How to Use
 
-The **Jenkinsfile** provided need to be used in your pipeline task, it will install all the dependencies and download and run the python script that analyse your manifest file. It can be run using either synchronous or asynchronous mode.
+The **Jenkinsfile** provided need to be used in your pipeline task, it will locate and analyze any supported manifest files under the specified directory.
 
 To use this jenkinsfile you need to:
 
