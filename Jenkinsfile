@@ -39,7 +39,7 @@ pipeline{
 
         SOOS_CHECKOUT_DIR="./"
 
-        SOOS_API_BASE_URL="https://dev-api.soos.io/api/"
+        SOOS_API_BASE_URL="https://api.soos.io/api/"
 
     }
     stages{
